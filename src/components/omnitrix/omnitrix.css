@@ -1,0 +1,32 @@
+.omnitrix-container {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80dvh;
+  flex-direction: column;
+}
+
+.omnitrix-interface,
+.omnitrix-chosen {
+  width: 100%; /* Make images responsive */
+  max-width: 500px; /* Set a max-width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits nicely */
+}
+
+.omnitrix-chosen {
+  height: 500px;
+}
+
+@media (min-width: 768px) {
+  .omnitrix-container {
+    flex-direction: row; /* Align items in a row on larger screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .fa-solid {
+    font-size: 30px;
+  }
+}
